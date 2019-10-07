@@ -4,6 +4,13 @@ Works great with [`md2pdf-ieee`] :smile:
 
 [`md2pdf-ieee`]: https://github.com/miki725/.dotfiles/blob/master/.config/fish/functions/md2pdf-ieee.fish
 
+## Requirements
+
+```bash
+brew install pandoc pandoc-citeproc pandoc-crossref
+brew cask install basictex
+```
+
 ## Cheatsheet
 
 ```markdown
