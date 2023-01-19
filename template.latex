@@ -111,9 +111,11 @@ $endif$
 $if(csl-refs)$
 \newlength{\cslhangindent}       % set up new length
 \setlength{\cslhangindent}{$if(csl-hanging-indent)$2em$else$0em$endif$}
-\newenvironment{cslreferences}%
-  {\everypar{\setlength{\hangindent}{\cslhangindent}}}%
+\newenvironment{CSLReferences}[2]%
+  {\everypar{\setlength{\hangindent}{\cslhangindent}}}% 
   {\par} % by default, this env does not change anything
+\newcommand{\CSLLeftMargin}[1]{#1}
+\newcommand{\CSLRightInline}[1]{#1}
 $endif$
 $if(listings)$
 \usepackage{listings}
